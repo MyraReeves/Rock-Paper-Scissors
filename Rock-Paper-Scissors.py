@@ -2,6 +2,7 @@ import random
 
 print('Let\'s play a game of Rock, Paper, Scissors!')
 Player_One = input('Please enter your name: ').capitalize()
+print('Hello, ' + Player_One + '!  You will be facing off against the computer as your opponent.')
 Player_Two = 'The computer'
 
 def startGame():
@@ -51,7 +52,7 @@ def startGame():
 
     def Play_Again():
         print('')
-        RestartAnswer = input('Would you like to play again? ').lower()
+        RestartAnswer = input('Would you like to play another round of the game? ').lower()
         if RestartAnswer == 'no':
             quit()
         if RestartAnswer == 'yes':
